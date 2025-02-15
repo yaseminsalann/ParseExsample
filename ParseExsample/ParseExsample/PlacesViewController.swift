@@ -20,9 +20,7 @@ class PlacesViewController: UIViewController {
 
     @objc func addButtonCliced() {
         //seque
-        /*
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddPlaceViewController") as! AddPlaceViewController
-        navigationController?.pushViewController(vc, animated: true)*/
+        self.performSegue(withIdentifier: "toAddPlaceVC", sender: nil)
     }
     @objc func logoutButtonCliced() {
         // Kullanıcı çıkışı
