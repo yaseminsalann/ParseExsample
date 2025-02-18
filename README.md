@@ -28,4 +28,35 @@ IoT uygulamaları
 
 Eğer kendi Parse Server’ınızı kurmak isterseniz, Node.js ve MongoDB kullanarak aşağıdaki gibi bir kurulum yapabilirsiniz.
 Ardından, kendi veritabanınızı bağlayarak çalıştırabilirsiniz. Parse, açık kaynak olduğu için kendi sunucunuza kurup özelleştirebilirsiniz.
+
+
+Proje içinde Singleton yapısıda kullanılmışdır.
+Singleton, yazılım geliştirmede tasarım desenlerinden (design pattern) biridir ve amacı bir sınıftan sadece bir tane nesne oluşturulmasını sağlamak ve bu nesneye global erişim sunmaktır.
+
+Singleton'ın Temel Özellikleri:
+
+Tek bir örnek (instance) bulunur.
+Uygulama boyunca bir sınıfın yalnızca tek bir nesnesi oluşturulur ve bu nesne tekrar tekrar kullanılabilir.
+Global erişim noktası sağlar.
+Singleton nesnesine her yerden erişilebilir.
+Bellek kullanımını optimize eder.
+Aynı nesneyi tekrar oluşturmak yerine, mevcut nesneyi kullanarak gereksiz nesne oluşturmayı önler.
+
+Singleton'ın Dezavantajları
+❌ Global erişim kontrolsüz olabilir.
+
+Her yerden erişilebilir olması, yanlış kullanım riskini artırabilir.
+❌ Unit Testleri zorlaştırabilir.
+
+Singleton, bağımlılıkları (dependency) doğrudan bağladığı için testlerde mocking (sahte nesne oluşturma) işlemlerini zorlaştırabilir.
+❌ Çoklu iş parçacığında (multithreading) dikkatli olunmalıdır.
+
+Tek bir örnek olduğu için, birden fazla iş parçacığı aynı anda Singleton'ı kullanıyorsa, senkronizasyon (thread-safety) gerektirebilir.
+
+Sonuç
+Singleton, uygulama genelinde tek bir nesne oluşturmak için kullanılır.
+Bellek optimizasyonu ve global erişim sağlar.
+Önemli senaryolar: Kullanıcı yönetimi, veri saklama, ağ istekleri, loglama, cache yönetimi.
+Dikkatli kullanılmalıdır çünkü unit testleri zorlaştırabilir ve thread güvenliği gerektirebilir.
+💡 Küçük projelerde fazla kullanılmamalıdır, ancak büyük projelerde doğru şekilde kullanıldığında performansı artırabilir.
  
