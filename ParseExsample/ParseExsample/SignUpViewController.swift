@@ -20,14 +20,14 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
        /*
         //veri kaydetme
-        var fruits = Fruits()
-        fruits.name = "strawberry"
-        fruits.calories = 150
+        var places = Places()
+        places.name = "strawberry"
+        places.calories = 150
 
-        fruits.save { result in
+        places.save { result in
             switch result {
-            case .success(let savedFruits):
-                print("Başarıyla kaydedildi: \(savedFruits)")
+            case .success(let savedPlaces):
+                print("Başarıyla kaydedildi: \(savedPlaces)")
             case .failure(let error):
                 print("Hata oluştu: \(error.localizedDescription)")
             }
@@ -35,12 +35,12 @@ class SignUpViewController: UIViewController {
         */
        /*
         //veriyi okuma
-        let query = Fruits.query()
+        let query = Places.query()
         query.find { result in
             switch result {
-            case .success(let fruit):
-                for fruits in fruit {
-                    print("Meyve: \(fruits.name ?? "Bilinmiyor"), Calories: \(fruits.calories ?? 0)")
+            case .success(let place):
+                for places in place {
+                    print("Meyve: \(places.name ?? "Bilinmiyor")")
                 }
             case .failure(let error):
                 print("Hata oluştu: \(error.localizedDescription)")
@@ -48,15 +48,15 @@ class SignUpViewController: UIViewController {
         }*/
         /*
          //VERİ GÜNCELLEME
-        let query = Fruits.query("objectId" == "5iREpYFvCY")
+        let query = Places.query("objectId" == "5iREpYFvCY")
         query.first { result in
             switch result {
-            case .success(var fruitsToUpdate):
-                fruitsToUpdate.calories = 30  // Güncelleme yap
-                fruitsToUpdate.save { saveResult in
+            case .success(var placesToUpdate):
+         placesToUpdate.calories = 30  // Güncelleme yap
+         placesToUpdate.save { saveResult in
                     switch saveResult {
-                    case .success(let updatedFruits):
-                        print("Başarıyla güncellendi: \(updatedFruits)")
+                    case .success(let updatedPlaces):
+                        print("Başarıyla güncellendi: \(updatedPlaces)")
                     case .failure(let error):
                         print("Hata oluştu: \(error.localizedDescription)")
                     }
@@ -68,11 +68,11 @@ class SignUpViewController: UIViewController {
          */
         /*
          //veri güncelleme
-         let query = Fruits.query("name" == "Banana") // İsme göre sorgu
+         let query = Places.query("name" == "Banana") // İsme göre sorgu
         query.first { result in
             switch result {
-            case .success(var fruits):
-                fruits.delete { deleteResult in
+            case .success(var places):
+         places.delete { deleteResult in
                     switch deleteResult {
                     case .success:
                         print("Meyve başarıyla silindi!")

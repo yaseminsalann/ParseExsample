@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; configuration.title = "Next"; ObjectID = "7Lp-uy-z1D"; */
+"7Lp-uy-z1D.configuration.title" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7Lp-uy-z1D"; */
+"7Lp-uy-z1D.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "BeA-V3-0Xy"; */
+"BeA-V3-0Xy.placeholder" = "password";
+
+/* Class = "UITextField"; placeholder = "place name"; ObjectID = "Esb-PO-Ayl"; */
+"Esb-PO-Ayl.placeholder" = "place name";
+
+/* Class = "UITextField"; placeholder = "username"; ObjectID = "XzH-k3-fTJ"; */
+"XzH-k3-fTJ.placeholder" = "username";
+
+/* Class = "UILabel"; text = "placeNameLabel"; ObjectID = "ajD-3K-ziO"; */
+"ajD-3K-ziO.text" = "placeNameLabel";
+
+/* Class = "UILabel"; text = "Foursquare Clone"; ObjectID = "ber-pI-iJ2"; */
+"ber-pI-iJ2.text" = "Foursquare Clone";
+
+/* Class = "UITextField"; placeholder = "place type"; ObjectID = "gGJ-Vv-7Vo"; */
+"gGJ-Vv-7Vo.placeholder" = "place type";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "iGQ-n1-aux"; */
+"iGQ-n1-aux.configuration.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "iGQ-n1-aux"; */
+"iGQ-n1-aux.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "placeAtmosphereLabel"; ObjectID = "p53-TC-fjh"; */
+"p53-TC-fjh.text" = "placeAtmosphereLabel";
+
+/* Class = "UITextField"; placeholder = "palce atmosphere"; ObjectID = "qHf-F8-KhP"; */
+"qHf-F8-KhP.placeholder" = "palce atmosphere";
+
+/* Class = "UIButton"; configuration.title = "Sign In"; ObjectID = "xIs-Yy-zay"; */
+"xIs-Yy-zay.configuration.title" = "Sign In";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xIs-Yy-zay"; */
+"xIs-Yy-zay.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "placeTypeLabel"; ObjectID = "zny-Le-n1B"; */
+"zny-Le-n1B.text" = "placeTypeLabel";
